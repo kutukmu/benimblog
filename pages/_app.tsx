@@ -10,12 +10,12 @@ function MyApp({ Component, pageProps }: AppProps) {
                 openGraph={{
                   type: 'website',
                   locale: 'en_IE',
-                  url: 'https://www.url.ie/',
-                  site_name: 'SiteName',
+                  url: 'https://www.flexdirection.com/',
+                  site_name: 'flexdirection',
                 }}
                 twitter={{
-                  handle: '@handle',
-                  site: '@site',
+                  handle: '@flexdirection',
+                  site: '@flexdirection',
                   cardType: 'summary_large_image',
                 }}
               />

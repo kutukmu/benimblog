@@ -17,29 +17,33 @@ const Header = () => {
     const handleClick = ()=>{
         console.log('here')
         if(mobileClass == "hidden"){
-            setMobileClass("sm:hidden")
+            setMobileClass("block")
         }else{
             setMobileClass("hidden")
         }
     }
   return (
     <div className='bg-gray-800 mx-auto px-3 md:px-10 mb-8'>
-        <div className='w-full flex justify-between items-center border-blue-400 py-4 px-0 md:inline-block'>
+        <div className='header w-full flex justify-between items-center  py-4 px-0 md:flex'>
             <div className='md:float-left block'>
                 <Link href="/">
-                    <span className='cursor-pointer font-bold text-lg md:text-2xl text-white'>
-                        FlexDirection
-                    </span>
+                    <img src="./new-logo.png" style={{width:"120px"}}/>
                 </Link>
             </div>
-            <div className='hidden md:float-left md:contents'>
+            <div className='br hidden md:float-left md:block'>
+                    
                 {categories.map((category) =>{
                     return <Link key={category.slug} href={`/category/${category.slug}`}>
-                        <span className='cursor-pointer md:float-right mt-1 align-middle text-white ml-4 font-bold'>
+                        <span className='cursor-pointer md:float-right mt-1 align-middle text-white ml-4 font-bold hover:text-pink-600'>
                             {category.name}
                         </span>
                     </Link>
                 })}
+                <Link  href={`/`}>
+                        <span className='cursor-pointer md:float-right mt-1 align-middle text-white ml-4 font-bold hover:text-pink-600'>
+                            Home
+                        </span>
+                    </Link>
             </div>
             <div className='float-left contents md:hidden'>
                 <button onClick={handleClick} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
