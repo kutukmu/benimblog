@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
 
-  console.log(GTAG)
   
   return <>
   
