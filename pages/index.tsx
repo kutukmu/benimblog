@@ -46,7 +46,6 @@ export async function getStaticProps() {
   // posts.map(post => func(post))
 
   return {
-    props: { posts },
-    fallback:true
+    props: { posts }
   };
 }
