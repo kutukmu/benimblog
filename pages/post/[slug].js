@@ -4,9 +4,13 @@ import { NextSeo } from 'next-seo';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
+import { route } from 'next/dist/server/router';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
+
+  console.log(router.isFallback)
+  console.log("here")
 
   if (router.isFallback) {
     return <Loader />;
