@@ -7,7 +7,7 @@ export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-3 lg:px-10 mb-8">
       <NextSeo
-      title={"Every Blog"}
+      title={"flex direction"}
       description="All sorts of blog posts are here"
     />
       <FeaturedPosts />
