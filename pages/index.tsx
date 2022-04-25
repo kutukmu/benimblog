@@ -4,7 +4,6 @@ import { getPosts } from '../services';
 import { NextSeo } from 'next-seo';
 
 export default function Home({ posts }) {
-  console.log(posts)
   return (
     <div className="container mx-auto px-3 lg:px-10 mb-8">
       <NextSeo
@@ -17,7 +16,7 @@ export default function Home({ posts }) {
           <div className='grid grid-cols-1 lg:grid-cols-6 gap-4'>
           {posts.map((post, index) => (
               <div className='lg:col-span-3 col-span-1' key={index}>
-                  <PostCard key={index} post={post.node} />
+                  <PostCard key={index} post={post} />
               </div>
           ))}
           </div>

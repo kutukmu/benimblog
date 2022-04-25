@@ -5,10 +5,7 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 export const getPosts = async () => {
   const query = gql`
     query MyQuery {
-      postsConnection {
-        edges {
-          cursor
-          node {
+          posts {
             author {
               bio
               name
@@ -32,16 +29,16 @@ export const getPosts = async () => {
               name
               slug
             }
-          }
-        }
       }
     }
   `;
 
   const result = await request(graphqlAPI, query);
-
-  return result.postsConnection.edges;
+  return result.posts
 };
+
+
+
 
 export const getCategories = async () => {
   const query = gql`
