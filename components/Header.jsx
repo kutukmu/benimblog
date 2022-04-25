@@ -15,7 +15,6 @@ const Header = () => {
     }, [])
 
     const handleClick = ()=>{
-        console.log('here')
         if(mobileClass == "hidden"){
             setMobileClass("block")
         }else{
