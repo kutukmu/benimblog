@@ -4,6 +4,7 @@ import { getPosts } from '../services';
 import { NextSeo } from 'next-seo';
 
 export default function Home({ posts }) {
+  console.log(posts)
   return (
     <div className="container mx-auto px-3 lg:px-10 mb-8">
       <NextSeo
