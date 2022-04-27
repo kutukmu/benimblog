@@ -9,8 +9,11 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+        <NextSeo
+          title={"Flex Direction by Kerim Kutuk"}
+          description="Flex Direction: A blogging website for nerds and average Joes. Helping you lose weight, get stronger, live better."
+        />
         </Head>
-
         <body>
           <Main />
           <NextScript />
