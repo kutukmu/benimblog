@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,7 +12,7 @@ class MyDocument extends Document {
         <Head>
         <NextSeo
           title={"Flex Direction by Kerim Kutuk"}
-          description="Flex Direction: A blogging website for nerds and average Joes. Helping you lose weight, get stronger, live better."
+          description="Flex Direction: A blogging website for nerds and average Joes. Helping you lose weight, get stronger, live better "
         />
         </Head>
         <body>
