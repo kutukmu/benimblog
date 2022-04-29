@@ -26,7 +26,7 @@ const Header = () => {
         <div className='header w-full flex justify-between items-center  py-4 px-0 md:flex'>
             <div className='md:float-left block'>
                 <Link href="/">
-                    <img src="./new-logo.png" style={{width:"120px"}}/>
+                   <span className="logo-text">dotted pine</span>
                 </Link>
             </div>
             <div className='br hidden md:float-left md:block'>
