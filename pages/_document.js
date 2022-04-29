@@ -11,8 +11,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <NextSeo
-          title={"Flex Direction by Kerim Kutuk"}
-          description="Flex Direction: A blogging website for nerds and average Joes. Helping you lose weight, get stronger, live better "
+          title={"Dotted Pine by Kerim Kutuk"}
+          description="Dotted Pine Direction: A blogging website for nerds and average Joes. Helping you lose weight, get stronger, live better "
         />
         </Head>
         <body>
